@@ -1,0 +1,59 @@
+%estilosTitulo{
+    font-size: 1.38rem;
+    text-align: center;  
+    margin: 20px;
+color:$color-page;
+
+}
+
+%estilosfotosIndex{
+    display: flex;
+    max-width: 100vw;
+    width: 100%;
+     
+    
+}
+
+%estilosHover{
+    cursor: pointer;
+    opacity: 2;
+    transform: scale(1.05);
+}
+
+%estilosfotos2{
+    object-fit: cover;
+    object-position: center; 
+     
+}
+
+%estilospromociones1{
+    text-align: center;
+    margin: 20px;
+    color: $color-page;  
+}
+
+%estilosproductos{
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.90s;
+    &:hover{
+            @extend %estilosHover;
+            
+    }
+  
+}
+
+%estilospromo{
+    width:100%;
+    height:100%;
+      margin: auto;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+        
+     
+}

@@ -1,0 +1,138 @@
+
+/* estilos del main*/
+main{
+    padding:50px;
+    margin: 0;
+    padding-top:45px;
+
+        h2{
+            @include main;
+           text-decoration: none;
+            color:$color-titulo;
+        }
+      .fotosprincipal{
+      width: 100%;
+     margin: auto;
+        @include flex2;
+        flex-wrap: wrap;
+        
+        
+      
+      }
+   .fotos{
+    background-color:$color-fotos;
+    width: 300px;
+   margin: 20px;
+   box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        border-radius: 15px;
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.90s;
+        &:hover{
+                @extend %estilosHover;
+                
+        }
+        img{
+           width: 300px;
+           height: 200px;
+           
+        }
+        p{
+            padding: 0.3rem 0.1rem;
+            font-size: 23px;
+            font-weight: 100;
+            
+            
+        }
+     
+       } 
+      
+   .descuentos{
+   flex-direction: row;
+   padding: 40px;
+   margin:20px;
+   margin-right: 65px;
+  @include flex2;
+
+   }
+
+   .pago{
+    @include descuentos;
+   }
+
+   .dto{
+    @include descuentos;
+   }
+
+   .stock{
+    @include descuentos;
+        
+   }
+    .phome{
+    @include boton;
+    &:hover{
+        transform: scale(0.9)
+    }
+}
+
+
+}
+
+
+.fotoportada{
+    
+    display: flex;
+    width: 80vw;
+    min-height: 90vh;
+ background-image:url(../img/alfajores4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+   margin: 15px;
+}
+
+
+
+.ppage5{
+    font-size: 40px;
+   
+}
+@media screen and (max-width:990px){
+.fotoportada{
+    width: 100vw;
+}
+
+}
+
+
+@media screen and (max-width:780px){
+
+
+}
+
+@media screen and (max-width:540px){
+
+    
+}
+
+
+
+/*
+@media screen and (max-width:600px){
+    header{
+display: flex;
+flex-direction: column;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        }
+.titulo{
+    display: flex;
+}
+
+}
+*/
+    
+    
